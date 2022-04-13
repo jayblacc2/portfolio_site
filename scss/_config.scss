@@ -1,7 +1,22 @@
 //Variables
 $website-width: 1280px;
-$main-color: #ffbc00;
+$main-color: #5e3aee; //#5463ff
+$header-bg-color: #f9f9fc;
 $light-color: #f4f4f4;
 $medium-color: #ccc;
 $dark-color: #333;
-$bg-image: url("../img/showcase.jpg");
+$btn-box-shadow: 5px 5px 15px rgba($main-color, $alpha: 0.3);
+$bg-image: url('../img/bg-dark.png');
+$bg-image-2: url('../img/bg-white');
+$bg-contact: linear-gradient(rgba(0, 0, 0, 0.6), rgba(56, 55, 55, 0.66)),
+  url('../img/bg-contact-2.jpg');
+$bg-gradient: linear-gradient(
+  150.28deg,
+  rgba(96, 59, 241, 0.96) 50.7%,
+  rgba(58, 21, 206, 0.7) 70.35%
+);
+
+$bg-gradient-light: linear-gradient(
+  rgba(94, 58, 238, 0.764),
+  rgba(82, 44, 233, 0.733)
+);

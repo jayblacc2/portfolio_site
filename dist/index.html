@@ -1,200 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
-      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Portfolio: UX/UX & Frontend Engineer</title>
-  </head>
-  <body>
-    <!-- Header / Showcase -->
-    <header id="header-home">
-      <div class="container">
-        <nav id="main-nav">
-          <img src="img/logo.png" alt="logo-img" id="logo" />
-          <ul>
-            <li><a href="index.html" class="current">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="header-content">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+
+  <!-- Fonts -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;700&display=swap" rel="stylesheet" /> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/main.css" />
+
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <title>Portfolio: HTML & Frontend Developer</title>
+</head>
+
+<body>
+  <!-- Header / Showcase -->
+  <header id="header-home">
+    <div class="container">
+      <nav id="main-nav">
+        <img src="img/logo-dark-2.png" alt="logo-img" id="logo" />
+        <ul>
+          <li><a href="index.html" class="current">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="#">skills</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div>
+          <button href="/" class="cta-link">Hire Me</button>
+        </div>
+      </nav>
+      <div class="header-content">
+        <div class="header-content-text">
           <h1>
-            I Am John The
-            <span
-              class="txt-type"
-              data-wait="3000"
-              data-words='["Photographer", "Designer", "UI/UX Dev"]'
-            ></span>
+            I'm Johnson
           </h1>
           <p class="lead">
-            I specialize in graphic design, UI/UX and photography
+            I specialize in React, UI/UX and Email Template
           </p>
-          <a href="work.html" class="btn-light">View My Work</a>
+          <a href="work.html" class="btn-main">View My Work</a>
+        </div>
+        <div class="header-content-img">
+          <img src="./img/profile.png" alt="profile-img">
         </div>
       </div>
-    </header>
-    <!-- Section A: Specialized -->
-    <section id="home-a" class="text-center py-2">
-      <div class="container">
-        <h2 class="section-title">I specialize in</h2>
-        <div class="bottom-line"></div>
-        <p class="lead">
-          Photography as well as creating masterpieces and UX/UI layouts for
-          websites and mobile applications
-        </p>
-        <div class="specials">
-          <div>
-            <i class="fas fa-file-alt fa-2x"></i>
-            <h3>Concepting</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              recusandae magnam illo cum quo reiciendis et doloribus. Laboriosam
-              doloribus consequatur aut,
-            </p>
-          </div>
-          <div>
-            <i class="fas fa-desktop fa-2x"></i>
-            <h3>UI/UX</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              recusandae magnam illo cum quo reiciendis et doloribus. Laboriosam
-              doloribus consequatur aut,
-            </p>
-          </div>
-          <div>
-            <i class="fas fa-object-ungroup fa-2x"></i>
-            <h3>Visual Design</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              recusandae magnam illo cum quo reiciendis et doloribus. Laboriosam
-              doloribus consequatur aut,
-            </p>
-          </div>
-          <div>
-            <i class="fas fa-thumbs-up fa-2x"></i>
-            <h3>Interaction</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              recusandae magnam illo cum quo reiciendis et doloribus. Laboriosam
-              doloribus consequatur aut,
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- section home-b -->
-    <section id="home-b" class="text-center py-2">
-      <div class="stats">
-        <div>
-          <ul>
-            <li><i class="fas fa-users fa-3x"></i></li>
-            <li class="stats-title">Clients</li>
-            <li class="stats-number">100</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li><i class="fas fa-award fa-3x"></i></li>
-            <li class="stats-title">Awards</li>
-            <li class="stats-number">9</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li><i class="fas fa-hourglass-start fa-3x"></i></li>
-            <li class="stats-title">Hours Worked</li>
-            <li class="stats-number">5000</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li><i class="fas fa-code-branch fa-3x"></i></li>
-            <li class="stats-title">Completed Projects</li>
-            <li class="stats-number">150</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!-- Section C -->
-    <section id="home-c" class="text-center py-2">
-      <div class="container">
-        <h2 class="section-title">
-          My Creative Process
-        </h2>
-        <div class="bottom-line"></div>
-        <p class="lead">
-          All of my UI/UX and design projects are based off of a practiced
-          formula to get the result that I am looking for
-        </p>
-        <div class="process">
-          <div>
-            <i class="fas fa-file-alt fa-4x process-icon my-2">
-              <div class="process-step">1</div>
-            </i>
-            <h3>Discuss The Project</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              voluptas laborum repellendus dolorum! Harum, cupiditate.
-            </p>
-          </div>
-          <div>
-            <i class="fas fa-desktop fa-4x process-icon my-2">
-              <div class="process-step">2</div>
-            </i>
-            <h3>Brainstorming ^ Concept</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              voluptas laborum repellendus dolorum! Harum, cupiditate.
-            </p>
-          </div>
-          <div>
-            <i class="fas fa-object-ungroup fa-4x process-icon my-2">
-              <div class="process-step">3</div>
-            </i>
-            <h3>UI/UX Planning</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              voluptas laborum repellendus dolorum! Harum, cupiditate.
-            </p>
-          </div>
-          <div>
-            <i class="fas fa-thumbs-up process-icon my-2">
-              <div class="process-step">4</div>
-            </i>
-            <h3>Interaction</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              voluptas laborum repellendus dolorum! Harum, cupiditate.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+  </header>
 
-    <!-- Footer -->
-    <footer id="main-footer">
-      <div class="footer-content container">
-        <p>Copyright &copy; 2019. All Rights Reserved</p>
-        <div class="social">
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-linkedin"></i>
+  <!-- Section About -->
+  <section id="about-a" class="text-center py-3 bg-gradient">
+    <div class="container">
+      <h2 class="section-title" style="color: #fff">About Me</h2>
+      <div class="bottom-line" style="background-color: #fff"></div>
+      <div class="about-info py-2">
+        <div class="about-img">
+          <img src="img/about.jpg" alt="" class="bioimg" />
+        </div>
+        <div class="-about-bio ">
+          <h4>Frontend Developer</h4>
+          <p>
+            Hello there!, my name is Johnson Jide, a self taught web developer and Email template developer, i hold
+            bachelor's degree in Mathematics and Computer science, and Master of Art.
+            I'm presently working on personal projects and partial internship working on react project.
+          </p>
+
+          <p>
+            I have experience working with HTML, CSS, SCSS, BOOTSTRAP, JAVASCRIPT, REACTJS, GIT and learning to work
+            with NEXTJS currently.
+            I can take your FIGMA design and turn them to reality
+          </p>
         </div>
       </div>
-    </footer>
-    <script src="js/typewriter.js"></script>
-  </body>
+    </div>
+  </section>
+
+  <!-- Section work -->
+  <section id="work-a" class="text-center">
+    <div class="container">
+      <h2 class="section-title">My Work</h2>
+      <div class="bottom-line"></div>
+      <div class="items my-3">
+        <div class="item">
+          <div class="item-image">
+            <img src="img/items/item1.png" alt="" />
+          </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">Design</p>
+              <h2 class="item-text-title">Great Gradients</h2>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image">
+            <img src="img/items/item2.png" alt="" />
+          </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">UI/UX</p>
+              <h2 class="item-text-title">World Experience</h2>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image">
+            <img src="img/items/item3.png" alt="" />
+          </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">Photography & Design</p>
+              <h2 class="item-text-title">Vanishing</h2>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image">
+            <img src="img/items/item4.png" alt="" />
+          </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">Design</p>
+              <h2 class="item-text-title">Gap INC</h2>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image">
+            <img src="img/items/item5.png" alt="" />
+          </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">Mobile UI Design</p>
+              <h2 class="item-text-title">Face THe Experience</h2>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image">
+            <img src="img/items/item6.png" alt="" />
+          </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">Design Concept</p>
+              <h2 class="item-text-title">Bezier Curves</h2>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image">
+            <img src="img/items/item7.png" alt="" />
+          </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">Photography</p>
+              <h2 class="item-text-title">Dock Ponder</h2>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image">
+            <img src="img/items/item8.png" alt="" />
+          </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">Web Applications</p>
+              <h2 class="item-text-title">Restaurant App</h2>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-image">
+            <img src="img/items/item7.png" alt="" />
+          </div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <p class="item-text-category">Social Network Concept</p>
+              <h2 class="item-text-title">FriendFeed</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Contact me -->
+  <section id="contact" class="text-center py-3 bg-gradient">
+    <div class="container">
+      <div class="contact-contents">
+        <div class="contact-contents-form">
+          <h2 class="section-title" style="margin-right: 6rem">Contact Me</h2>
+          <div class="bottom-line" style="margin-left: 8.5rem"></div>
+          <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+            <div class="text-fields">
+              <input type="text" class="text-input name-input" placeholder="Name" name="name" />
+              <input type="text" class="text-input subject-input" placeholder="Subject" name="subject" />
+              <input type="email" class="text-input email-input" placeholder="Email" name="email" required />
+              <input type="text" class="text-input phone-input" placeholder="+123 456 56 56" name="phone" />
+              <textarea class="text-input message-input" placeholder="Enter Message" name="message"></textarea>
+              <div class="">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
+            </div>
+            <button type="submit" class="btn-main">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer id="main-footer">
+    <div class="footer-content container">
+      <p>Copyright &copy; 2022. All Rights Reserved</p>
+      <div class="social">
+        <i class="fab fa-twitter href=" https://www.google.com"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+    </div>
+  </footer>
+  <script src=""></script>
+</body>
+
 </html>

@@ -7,9 +7,16 @@
 
 %btn-shared {
   display: inline-block;
+
+  color: #fff;
+  font-weight: 600;
+
   padding: 0.8rem 2rem;
+
   cursor: pointer;
   border: none;
+  border-radius: 3px;
+
   transition: all 0.5s ease;
 }
 @mixin flex-align() {
@@ -24,8 +31,13 @@
 .btn {
   &-main {
     @extend %btn-shared;
-    color: #333;
-    background: $main-color;
+    color: $light-color;
+    background-color: $main-color;
+
+    &:hover {
+      background-color: $dark-color;
+      box-shadow: $btn-box-shadow;
+    }
   }
 
   &-light {
@@ -42,9 +54,9 @@
   }
 }
 //instead of creating multiple hover-state several times
-button[class^="btn-"]:hover,
-a[class^="btn-"]:hover,
-input[class^="btn-"]:hover {
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
   background-color: $main-color;
 }
 
@@ -90,11 +102,14 @@ input[class^="btn-"]:hover {
 .section {
   &-title {
     font-size: 2rem;
+    color: $main-color;
+
+    text-transform: capitalize;
+    letter-spacing: 2px;
+
     display: block;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.2rem;
     text-align: center;
-    font-weight: 100;
-    text-transform: uppercase;
   }
 }
 
@@ -103,7 +118,7 @@ input[class^="btn-"]:hover {
     width: 3rem;
     height: 5px;
     background-color: $main-color;
-    margin: 0 auto 1rem auto;
+    margin: 0 auto 1.2rem auto;
   }
 }
 // Backgrounds
@@ -114,7 +129,7 @@ input[class^="btn-"]:hover {
   }
   &-main {
     background: $main-color;
-    color: set-text-color($main-color);
+    color: #fff;
   }
   &-dark {
     background: $dark-color;
@@ -124,4 +139,14 @@ input[class^="btn-"]:hover {
     background: $medium-color;
     color: set-text-color($medium-color);
   }
+
+  &-gradient {
+    background: $bg-gradient;
+    color: $light-color;
+  }
+}
+
+.border-bottom {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
